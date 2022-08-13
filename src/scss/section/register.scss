@@ -1,0 +1,56 @@
+.register{
+    padding: var(--padding-mobile);
+    font-family: baloo;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-secondary-color);
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    &__content{
+        max-width: 900px;
+        margin-bottom: 3rem;
+        h2{
+        
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+        }
+        form{
+            background-color: var(--background-color-primary);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: var(--padding-mobile);
+
+            input{
+                width: 100%;
+                height:5rem;
+                border-radius: 5px;
+                margin-bottom: 1.2rem;
+                &::placeholder{
+                    padding-left: 10px;
+                    font-size: 1.5rem;
+                    font-family: baloo;
+                }
+
+            }
+            button{
+                border: none;
+                background-color: var(--btn-primary-color);
+            padding: 0.5rem;
+                border-radius: 5px;
+                font-family: baloo;
+                font-weight: 700;
+                font-size: 1.3rem;
+                color: var(--text-primary-color);
+            }
+        }
+    }
+}

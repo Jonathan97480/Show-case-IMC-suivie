@@ -1,0 +1,30 @@
+.features{
+    background-color: var(--background-color-secondary);
+    padding: var(--padding-mobile);
+    &__title{
+        font-family: baloo;
+        font-weight: 700;
+        color: var(--text-primary-color);
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+    }
+    &__content-listCard{
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include media(medium){
+            flex-direction: row; 
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+            @include media(large){
+           
+            justify-content: space-between;
+            padding: 1rem;
+           
+        }
+    }
+}

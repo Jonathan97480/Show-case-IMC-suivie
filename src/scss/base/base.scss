@@ -1,0 +1,19 @@
+.section{
+    max-width: 1920px;
+    margin:  auto;
+}
+.spacing{
+    display: block;
+    height: 20px;
+}
+.dark{
+    background-color: var(--background-color-primary);
+}
+.light{
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    
+}

@@ -1,0 +1,109 @@
+
+
+.home{
+    min-height: 100vh;
+    background-color: var(--background-color-primary);
+    padding: var(--padding-mobile);
+    
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 1400px;
+
+       
+        
+        &-info{
+            .title{
+                font-family: baloo;
+                color: var(--text-primary-color);
+                font-size: var(--text-xlarge-size);
+                text-align: center;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 1.5rem;
+            }
+            .desc{
+                font-family: baloo;
+                color: var(--text-primary-color);
+                font-size: var(--text-small-size);
+                text-align: center;
+                font-weight: 400;
+                margin-bottom: 1.5rem;
+            }
+            .logo-google-play{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 200px;
+                    margin-bottom: 1.5rem;
+                    animation: mockupSlideLeft 1s ease-in-out;
+                }
+            }
+        }
+        &-img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 80%;
+
+                animation: mockupSlideLeft 1s ease-in-out;
+            }
+        }
+         @include media(medium){
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            &-info{
+                width: 50%;
+              
+                align-items: center;
+                justify-content: center;
+                 .logo-google-play{
+           
+                    img{
+                        width: 400px;
+                       
+                    }
+                }
+            }
+            &-img{
+      
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        @include media(large){
+        margin: auto;
+        width: 1400px;
+    }
+    }
+    
+}
+.infoAnimation{
+    animation: infoAnimation 1s ease-in-out;
+}
+
+@keyframes mockupSlideLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes infoAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

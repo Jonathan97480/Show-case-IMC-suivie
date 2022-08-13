@@ -8,8 +8,13 @@
 //layout
 @import 'layout/header';
 @import 'layout/footer';
-//page
-@import 'page/page';
+//section
+@import 'section/home';
+@import 'section/features';
+@import 'section/register';
+
+//components
+@import 'components/card';
 
 
 

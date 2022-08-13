@@ -12,26 +12,166 @@
 	<meta property="og:locale" content="fr_FR">
 	<meta property="og:title" content="Accueil">
 	<meta property="og:site_name" content="name site">
-	<meta property="og:image" content="/img/logo/logo.png">
+	<meta property="og:image" content="/img/logo.png">
 	<link rel="stylesheet" href="css/style.css" onload="if(media!='all')media='all'">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-	<link rel="icon" href="img/logo/logo.ico">
-	<title>Titre de la page</title>
+	<link rel="icon" href="img/logo.ico">
+	<title>IMC suivie inscription à la beta</title>
 </head>
 
 <body id="Body">
-	<!-- Header -->
-	<header>
 
-	</header>
 	<!-- Main -->
 	<main id="App">
+		<section class="section home" id="home">
+			<!-- Header -->
+			<header class="home__header">
+				<span class="home__header-bergeur" id="berger">
+					<img src="./img/icon/cil_hamburger-menu.svg" alt="">
+				</span>
+				<nav class="home__header-nav">
+					<ul>
+						<li><a href="#home">Accueil</a></li>
+						<li><a href="#features">Features</a></li>
+						<li><a href="#register">s’inscrire à la bêta</a></li>
+					</ul>
+				</nav>
+			</header>
 
+			<!-- Content -->
+			<div class="home__content">
+				<div class="home__content-info">
+					<div class="infoAnimation">
+						<h1 class="title">IMC SUIVIE</h1>
+
+						<p class="desc">
+							Cette application vous permet de calculer votre IMC votre indice de masse corporelle et
+							votre
+							IMG
+							votre indice de masse
+							grasse et de suivre votre perte de poids.
+							<span class="spacing"></span>
+							Vous permet visualiser votre progression avec des graphique ou des tableaux
+							dans le temps et de triée ces donnée par semaine mois ou année
+
+						</p>
+					</div>
+					<div class="logo-google-play">
+						<img src="img/google_play_logo.png" alt="logo google play store" class="info__logo-google">
+					</div>
+				</div>
+				<div class="home__content-img">
+					<img src="img/mockup_mobil.png" alt="mockup mobile android">
+				</div>
+			</div>
+		</section>
+		<section class="section features" id="features">
+			<h2 class="features__title">Features</h2>
+			<div class="features__content-listCard">
+				<div class="card">
+					<span class="card__icon">
+						<img class="card__icon-img" src="./img/icon/mdi_responsive.svg" />
+					</span>
+
+					<div class="card__content">
+						<h3 class="card__content-title">Responsive design application</h3>
+						<p class="card__content-desc">
+							L’application est conçu pour s'adapter correctement sur les tablettes comme sur mobile
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<span class="card__icon">
+						<img class="card__icon-img" src="./img/icon/fa6-solid_calculator.svg" />
+
+					</span>
+					<div class="card__content">
+						<h3 class="card__content-title">Calcul de votre indice de masse corporelle (IMC)</h3>
+						<p class="card__content-desc">
+							Le calcul de votre IMC calculer sont les normes européennes en vigueur
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<span class="card__icon">
+						<img class="card__icon-img" src="./img/icon/fa6-solid_calculator.svg" />
+
+					</span>
+					<div class="card__content">
+						<h3 class="card__content-title">Calcul de votre indice de masse grasse (IMG)</h3>
+						<p class="card__content-desc">
+							L'application en plus de calculer votre IMC quelques aussi votre IMG votre indice de masse
+							grasse corporelle
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<span class="card__icon">
+						<img class="card__icon-img" src="./img/icon/icon-park-twotone_balance.svg" />
+
+					</span>
+					<div class="card__content">
+						<h3 class="card__content-title">Suivi de votre perte de poids</h3>
+						<p class="card__content-desc">
+							L'application sauvegarde et suis votre perte de poids est l'évolution de votre IMC et IMG
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<span class="card__icon">
+						<img class="card__icon-img" src="./img/icon/cil_graph.svg" />
+
+					</span>
+					<div class="card__content">
+						<h3 class="card__content-title">Graphique</h3>
+						<p class="card__content-desc">
+							L'application utilise des graphiques et des tableaux pour que vous puissiez me suivre votre
+							évolution dans le temps
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<span class="card__icon">
+						<img class="card__icon-img" src="./img/icon/fa6-solid_user-group.svg" />
+					</span>
+					<div class="card__content">
+						<h3 class="card__content-title">Profil multiple</h3>
+						<p class="card__content-desc">
+							Vous pouvez avoir un profil différent pour chaque membre de votre famille
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="section register" id="register">
+			<div class="register__content">
+				<h2>Participez à la bêta</h2>
+				<p>
+					L'application vous intéresse et vous souhaitez être au courant de sa sortie en beta laissez-nous
+					votre
+					adresse email et
+					nous enverrons un lien de téléchargement dès que l’application sera disponible en bêta
+				</p>
+				<form action="">
+					<input type="email" placeholder="Votre adresse email" class="register__input">
+					<button type="submit" class="register__btn">Envoyer</button>
+				</form>
+			</div>
+
+		</section>
 	</main>
 
 	<footer>
-
+		<img src="./img/logo.png" alt="logo application" width="154" height="154" />
+		<ul>
+			<li><a href="#home">Accueil</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#register">s'inscrire à la beta</a></li>
+		</ul>
+		<span>© Copyright Gauvin Jonathan</span>
 	</footer>
 </body>
+<script src="./js/script.js"></script>
 
 </html>

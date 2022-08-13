@@ -1,0 +1,38 @@
+footer{
+    background-color: #1E1E1E;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            font-family: baloo;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        @include media(medium){
+          flex-direction: row;
+            justify-content: space-between;
+            padding: 1rem;
+            gap: 2rem;
+         
+        }
+    }
+    span{
+        font-family: baloo;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--text-primary-color);
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
