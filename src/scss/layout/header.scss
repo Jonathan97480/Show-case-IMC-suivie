@@ -40,12 +40,12 @@
                     display: flex;
                   
                     ul{
+                        position: relative;
                         display: flex;
                         gap: 6rem;
                         flex-direction: row;
                         justify-content: space-between;
                         align-items: center;
-                     
                     }
                 }
         }
@@ -53,6 +53,8 @@
     }
 
 }
+
+
 
 @keyframes navOpen {
   from {

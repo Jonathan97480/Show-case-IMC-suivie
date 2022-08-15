@@ -1,0 +1,21 @@
+.btn{
+    border: none;
+    background-color: var(--btn-primary-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: baloo;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--text-primary-color);
+    box-shadow: var(--shadows);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover{
+        background-color: var(--btn-primary-color-hover);
+        box-shadow: var(--shadows-hover);
+    }
+
+    &:active{
+        scale: 0.95;
+    }
+}

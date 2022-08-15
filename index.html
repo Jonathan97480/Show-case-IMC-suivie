@@ -7,14 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="description du site" />
 	<meta name="author" content="Gauvin Jonathan" />
-	<meta property="og:description" content="description du site">
+	<meta property="og:description" content="Une nouvelle application Gratuite de suivie de poids qui prend en compte 
+	votre IMC et votre IMG va bientôt sortir vous êtes intéresser, 
+	inscrivez vous a la bêta de cette application en quelque seconde">
 	<meta property="og:type" content="website">
 	<meta property="og:locale" content="fr_FR">
 	<meta property="og:title" content="Accueil">
-	<meta property="og:site_name" content="name site">
+	<meta property="og:site_name" content="IMC SUIVIE BETA INSCRIPTION">
 	<meta property="og:image" content="/img/logo.png">
 	<link rel="stylesheet" href="css/style.css" onload="if(media!='all')media='all'">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="icon" href="img/logo.ico">
 	<title>IMC suivie inscription à la beta</title>
 </head>
@@ -27,13 +28,14 @@
 			<!-- Header -->
 			<header class="home__header">
 				<span class="home__header-bergeur" id="berger">
-					<img src="./img/icon/cil_hamburger-menu.svg" alt="">
+					<img src="./img/icon/cil_hamburger-menu.svg" loading="lazy" alt="icon burger pour la version mobile"
+						width="50" height="50">
 				</span>
 				<nav class="home__header-nav">
 					<ul>
-						<li><a href="#home">Accueil</a></li>
-						<li><a href="#features">Features</a></li>
-						<li><a href="#register">s’inscrire à la bêta</a></li>
+						<li class="linkAnimation"><a href="#home">Accueil</a></li>
+						<li class="linkAnimation"><a href="#features">Features</a></li>
+						<li class="linkAnimation"><a href="#register">s’inscrire à la bêta</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -42,26 +44,30 @@
 			<div class="home__content">
 				<div class="home__content-info">
 					<div class="infoAnimation">
-						<h1 class="title">IMC SUIVIE</h1>
+						<h1 class="title">IMC SUIVI</h1>
 
 						<p class="desc">
-							Cette application vous permet de calculer votre IMC votre indice de masse corporelle et
-							votre
-							IMG
-							votre indice de masse
-							grasse et de suivre votre perte de poids.
+							L'application calcule votre indice de masse corporelle ( IMC ) et
+							votre indice de masse grasse ( IMG ) et sui l'évolution de votre poids dans le temps.
 							<span class="spacing"></span>
-							Vous permet visualiser votre progression avec des graphique ou des tableaux
-							dans le temps et de triée ces donnée par semaine mois ou année
-
+						<div class="desc__list">
+							<h2>Fonctionnalité : </h2>
+							<ul>
+								<li>Visualiser ces informations grasse à des graphiques</li>
+								<li>visualizer votre progression. par semaine mois ou ânée</li>
+								<li>calculer votre poids idéal</li>
+							</ul>
+						</div>
 						</p>
 					</div>
 					<div class="logo-google-play">
-						<img src="img/google_play_logo.png" alt="logo google play store" class="info__logo-google">
+						<img src="img/google_play_logo.png" alt="logo google play store" class="info__logo-google"
+							width="400" height="119" loading="lazy">
 					</div>
 				</div>
 				<div class="home__content-img">
-					<img src="img/mockup_mobil.png" alt="mockup mobile android">
+					<img src="img/mockup_mobil.webp" alt="mockup mobile android" width="290" height="605"
+						loading="lazy">
 				</div>
 			</div>
 		</section>
@@ -70,74 +76,85 @@
 			<div class="features__content-listCard">
 				<div class="card">
 					<span class="card__icon">
-						<img class="card__icon-img" src="./img/icon/mdi_responsive.svg" />
+						<img class="card__icon-img" src="./img/icon/mdi_responsive.svg" loading="lazy" width="96"
+							height="72" alt="icon pour la fonctionnalité responsive" />
 					</span>
 
 					<div class="card__content">
 						<h3 class="card__content-title">Responsive design application</h3>
 						<p class="card__content-desc">
-							L’application est conçu pour s'adapter correctement sur les tablettes comme sur mobile
+							L’application est conçu pour s'adapter correctement sur les tablettes et mobile
 						</p>
 					</div>
 				</div>
 				<div class="card">
 					<span class="card__icon">
-						<img class="card__icon-img" src="./img/icon/fa6-solid_calculator.svg" />
+						<img class="card__icon-img" src="./img/icon/fa6-solid_calculator.svg" loading="lazy" width="96"
+							height="127" alt="icon pour la fonctionnalité calcul de IMC" />
 
 					</span>
 					<div class="card__content">
-						<h3 class="card__content-title">Calcul de votre indice de masse corporelle (IMC)</h3>
+						<h3 class="card__content-title">Calculé votre indice de masse corporelle (IMC)</h3>
 						<p class="card__content-desc">
-							Le calcul de votre IMC calculer sont les normes européennes en vigueur
+							Pour le calcul de votre IMC nous utilisons une formule qui prend en compte votre poids et
+							votre taille
 						</p>
 					</div>
 				</div>
 				<div class="card">
 					<span class="card__icon">
-						<img class="card__icon-img" src="./img/icon/fa6-solid_calculator.svg" />
+						<img class="card__icon-img" src="./img/icon/fa6-solid_calculator.svg" loading="lazy" width="96"
+							height="127" alt="icon pour la fonctionnalité calcul de IMG" />
 
 					</span>
 					<div class="card__content">
-						<h3 class="card__content-title">Calcul de votre indice de masse grasse (IMG)</h3>
+						<h3 class="card__content-title">Calculé votre indice de masse grasse ( IMG )</h3>
 						<p class="card__content-desc">
-							L'application en plus de calculer votre IMC quelques aussi votre IMG votre indice de masse
-							grasse corporelle
+							L'application en plus de calculer votre ( IMC ) peux aussi calculé votre indice de masse
+							grasse ( IMG ) corporelle
 						</p>
 					</div>
 				</div>
 				<div class="card">
 					<span class="card__icon">
-						<img class="card__icon-img" src="./img/icon/icon-park-twotone_balance.svg" />
+						<img class="card__icon-img" src="./img/icon/icon-park-twotone_balance.svg" loading="lazy"
+							width="96" height="96" alt="icon pour la fonctionnalité suivie de poids" />
 
 					</span>
 					<div class="card__content">
-						<h3 class="card__content-title">Suivi de votre perte de poids</h3>
+						<h3 class="card__content-title">Suivez l'évolution de votre poids dans le temps </h3>
 						<p class="card__content-desc">
-							L'application sauvegarde et suis votre perte de poids est l'évolution de votre IMC et IMG
+							L'application sauvegarde et suis votre perte de poids est l'évolution de votre ( IMC ) et (
+							IMG )
+							et vous permet de les visualizer par semaine mois ou ânée
 						</p>
 					</div>
 				</div>
 				<div class="card">
 					<span class="card__icon">
-						<img class="card__icon-img" src="./img/icon/cil_graph.svg" />
+						<img class="card__icon-img" src="./img/icon/cil_graph.svg" loading="lazy" width="96" height="96"
+							alt="icon pour la fonctionnalité graphique représentation" />
 
 					</span>
 					<div class="card__content">
 						<h3 class="card__content-title">Graphique</h3>
 						<p class="card__content-desc">
-							L'application utilise des graphiques et des tableaux pour que vous puissiez me suivre votre
-							évolution dans le temps
+							L'application génère des graphiques pour visualiser votre ( IMC ) et ( IMG ) et vous permet
+							de les
+							visualizer par semaine mois ou année
 						</p>
 					</div>
 				</div>
 				<div class="card">
 					<span class="card__icon">
-						<img class="card__icon-img" src="./img/icon/fa6-solid_user-group.svg" />
+						<img class="card__icon-img" src="./img/icon/fa6-solid_user-group.svg" loading="lazy" width="96"
+							height="78" alt="icon pour la fonctionnalité multiple profile" />
 					</span>
 					<div class="card__content">
 						<h3 class="card__content-title">Profil multiple</h3>
 						<p class="card__content-desc">
-							Vous pouvez avoir un profil différent pour chaque membre de votre famille
+							Vous pouvez avoir un profil différent pour chaque membre de votre famille sur le mème
+							appareille
 						</p>
 					</div>
 				</div>
@@ -153,9 +170,10 @@
 					adresse email et
 					nous enverrons un lien de téléchargement dès que l’application sera disponible en bêta
 				</p>
-				<form action="">
-					<input type="email" placeholder="Votre adresse email" class="register__input">
-					<button type="submit" class="register__btn">Envoyer</button>
+				<form action="https://formspree.io/f/xbjbjyvo" method="POST">
+					<input type="email" placeholder="Votre adresse email" name="email" class="register__input">
+					<input type="hidden" name="message" value="nouvelle soumission pour beta IMC">
+					<button type="submit" class="btn">Envoyer</button>
 				</form>
 			</div>
 
@@ -163,11 +181,11 @@
 	</main>
 
 	<footer>
-		<img src="./img/logo.png" alt="logo application" width="154" height="154" />
+		<img src="./img/logo.png" alt="logo application" width="154" height="154" loading="lazy" />
 		<ul>
-			<li><a href="#home">Accueil</a></li>
-			<li><a href="#features">Features</a></li>
-			<li><a href="#register">s'inscrire à la beta</a></li>
+			<li class="linkAnimation"><a href="#home">Accueil</a></li>
+			<li class="linkAnimation"><a href="#features">Features</a></li>
+			<li class="linkAnimation"><a href="#register">S'inscrire à la beta</a></li>
 		</ul>
 		<span>© Copyright Gauvin Jonathan</span>
 	</footer>

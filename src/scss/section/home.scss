@@ -15,6 +15,7 @@
        
         
         &-info{
+            
             .title{
                 font-family: baloo;
                 color: var(--text-primary-color);
@@ -31,15 +32,50 @@
                 text-align: center;
                 font-weight: 400;
                 margin-bottom: 1.5rem;
+
+                &__list{
+                    h2{
+                        font-family: baloo;
+                        color: var(--text-primary-color);
+                        font-size: var(--text-medium-size);
+                        text-align: left;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        margin-bottom: 1.5rem;
+                    }
+                    ul{
+                        margin-left: 1.5rem;
+                        margin-bottom: 1.5rem;
+                        display:flex;
+                        flex-direction: column;
+                        align-items: left;
+                        
+                    
+                        gap: 1.5rem;
+                        font-family: baloo;
+                        font-weight: 700;
+                        color: var(--text-primary-color);
+                        list-style:url(../../../img/icon/akar-icons_circle-check-fill.svg);
+                          
+                
+                       
+                    }
+                }
+              
             }
             .logo-google-play{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                  
                 img{
-                    width: 200px;
+                    width: 300px;
+                    height: auto;
+                    aspect-ratio: attr(width) / attr(height);
                     margin-bottom: 1.5rem;
                     animation: mockupSlideLeft 1s ease-in-out;
+                    
+                   
                 }
             }
         }
@@ -47,10 +83,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+             
             img{
-                width: 80%;
-
+                width: 100%;
+                 height: auto;
+                aspect-ratio: attr(width) / attr(height);
                 animation: mockupSlideLeft 1s ease-in-out;
+               
             }
         }
          @include media(medium){
@@ -58,6 +97,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 1rem;
+            margin-top: calc(50% - 47% )!important;
             &-info{
                 width: 50%;
               
@@ -91,7 +131,7 @@
 
 @keyframes mockupSlideLeft {
     from {
-        transform: translateX(100%);
+        transform: translateX(20%);
     }
     to {
         transform: translateX(0%);
@@ -100,7 +140,7 @@
 @keyframes infoAnimation {
     from {
         opacity: 0;
-        transform: translateY(-100%);
+        transform: translateY(-20%);
     }
     to {
         opacity: 1;
