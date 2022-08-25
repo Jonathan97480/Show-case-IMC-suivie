@@ -1,5 +1,6 @@
 .btn{
     border: none;
+    width: 100%;
     background-color: var(--btn-primary-color);
     padding: 0.5rem;
     border-radius: 5px;
@@ -10,6 +11,10 @@
     box-shadow: var(--shadows);
     cursor: pointer;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    @include media(medium){
+        width: auto;
+       
+    }
     &:hover{
         background-color: var(--btn-primary-color-hover);
         box-shadow: var(--shadows-hover);
